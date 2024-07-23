@@ -1,0 +1,22 @@
+table {
+  border-spacing: 0.5em;
+
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+
+}
+
+td {
+  width: 5em;
+  height: 5em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  span {
+    font-size: 3em;
+  }
+}

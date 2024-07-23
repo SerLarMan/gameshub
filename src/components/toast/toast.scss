@@ -1,0 +1,44 @@
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5em;
+  box-sizing: border-box;
+}
+
+.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    top: 6em;
+    opacity: 0;
+  }
+  to {
+    top: 5em;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    top: 5em;
+    opacity: 1;
+  }
+  to {
+    top: 6em;
+    opacity: 0;
+  }
+}
